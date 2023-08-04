@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@300&family=Poppins:wght@200;300;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.outter_div1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #373b44 0%, #4286f4 100%);
+  backdrop-filter: blur(25px);
+  width: 60%;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.submit:hover{
+  transform: translateY(5px);
+  transition: all 1s ease;
+}
+.fullname,.rollclass,.semphone{
+  width: 80%;
+  display: flex;
+}
+.register input {
+  padding: 0.6rem;
+  margin: 0.3rem;
+  border-radius: 1rem;
+  width: 80%;
+}
+.register select {
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+.imagereg{
+  width: 40%;
+}
+.form{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.register button{
+  background: linear-gradient(180deg, #373B44 0%, #4286F4 100%);
+border: 1px solid #892020;
+color: white;
+border-radius: 1rem;
+}
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #77bde6;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+
+@media (max-width:950px) {
+  .imagereg{
+    display: none;
+  }
+  .register{
+    width: 100%;
+    padding: 0.3rem;
+  }
+  .register input {
+    width: 80%;
+  }
+  .fullname,.rollclass,.semphone{
+    width: 80%;
+  }
+  .form{
+    width: 100%;
+  }
+}
